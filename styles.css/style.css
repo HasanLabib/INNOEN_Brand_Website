@@ -1,0 +1,234 @@
+@import "tailwindcss";
+/* Shared Style */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 90rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 8rem;
+  padding-top: 1.875rem;
+}
+/* Header Section */
+.navbar {
+  margin-bottom: 2.8125rem;
+}
+.color-banner {
+  background-color: rgba(234, 216, 164, 0.35);
+  color: #f68537;
+}
+.fontStyle {
+  font-family: "Noto Serif", serif;
+}
+.courses-title {
+  font-family: "Roboto", sans-serif;
+}
+.banner-title {
+  max-width: 40.625rem;
+  width: 80%;
+  min-height: 21.75rem;
+  height: 100%;
+}
+.banner-img {
+  max-width: 543.84px;
+  width: 90%;
+}
+/* Course */
+.courses {
+  background-color: rgba(214, 216, 93, 0.1);
+  color: rgba(130, 110, 96, 0.7);
+}
+.card {
+  max-width: 20rem;
+  width: 100%;
+  min-height: 25rem;
+  border: 1px solid black;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.57);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.card-container {
+  padding-bottom: 5rem;
+}
+.card img {
+  border-radius: 16px 16px 0px 0px;
+  object-fit: fill;
+  margin-bottom: 1.85rem;
+  -webkit-border-radius: 16px 16px 0px 0px;
+  -moz-border-radius: 16px 16px 0px 0px;
+  -ms-border-radius: 16px 16px 0px 0px;
+  -o-border-radius: 16px 16px 0px 0px;
+}
+.card p,
+.card button {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2.2rem;
+}
+.card button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  background-color: #f68537;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin: 0px 15px;
+}
+.courses-title {
+  margin-top: 50px;
+  margin-bottom: 2.7rem;
+}
+.see-more {
+  font-family: "Roboto", sans-serif;
+  color: #f68537;
+}
+
+/* Product */
+
+.product {
+  background-color: rgba(196, 196, 196, 0.04);
+  color: rgba(130, 110, 96, 0.7);
+}
+.product-container {
+  padding-bottom: 5rem;
+}
+.card-Product {
+  max-width: 20rem;
+  width: 100%;
+  min-height: 27rem;
+  border: 1px solid black;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.57);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.card-Product img {
+  border-radius: 16px 16px 0px 0px;
+  object-fit: fill;
+  margin-bottom: 1.85rem;
+  -webkit-border-radius: 16px 16px 0px 0px;
+  -moz-border-radius: 16px 16px 0px 0px;
+  -ms-border-radius: 16px 16px 0px 0px;
+  -o-border-radius: 16px 16px 0px 0px;
+}
+.card-Product p,
+.card-Product button {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2.2rem;
+}
+.card-Product button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  background-color: #f68537;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin: 0px 15px;
+}
+.product-title {
+  margin-top: 50px;
+  margin-bottom: 2.7rem;
+}
+.see-more {
+  font-family: "Roboto", sans-serif;
+  color: #f68537;
+}
+
+/* Get in touch */
+.get-in-touch-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 116px 150px;
+  gap: 115px;
+}
+.form-get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+textarea {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+.form-get-in-touch textarea {
+  width: 497px;
+  min-height: 70px;
+  border-radius: 10px;
+  background-color: white;
+  display: block;
+  padding: 20px 32px;
+  margin-bottom: 19px;
+  border: 1px solid #d6dded;
+}
+label[for="email"],
+label[for="name"],
+label[for="message"] {
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.form-get-in-touch textarea {
+  min-height: 135px;
+  /* text-align: center; */
+}
+.get-in-touch-title {
+  font-size: 97px;
+  font-weight: bold;
+}
+.get-in-touch-btn {
+  text-align: center;
+  max-width: 100%;
+  min-height: 62px;
+}

@@ -39,12 +39,15 @@
   padding-top: 1.875rem;
 }
 /* Header Section */
-.navbar {
-  margin-bottom: 2.8125rem;
-}
+
 .color-banner {
+  width: 100%;
   background-color: rgba(234, 216, 164, 0.35);
   color: #f68537;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
 }
 .fontStyle {
   font-family: "Noto Serif", serif;
@@ -52,71 +55,151 @@
 .courses-title {
   font-family: "Roboto", sans-serif;
 }
-.banner-title {
-  max-width: 40.625rem;
-  width: 80%;
-  min-height: 21.75rem;
-  height: 100%;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding: 0 8rem;
 }
+
+.logo {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f68537;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: "Roboto", sans-serif;
+  color: #f68537;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f68537;
+  opacity: 0.7;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 2rem 8rem;
+}
+
+.banner-title {
+  font-family: "Noto Serif", serif;
+  line-height: 1.2;
+  color: #f68537;
+}
+
 .banner-img {
-  max-width: 543.84px;
+  max-width: 540px;
   width: 90%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
 }
 /* Course */
 .courses {
-  background-color: rgba(214, 216, 93, 0.1);
-  color: rgba(130, 110, 96, 0.7);
+  background-color: #f9f7e6;
+  color: #826e60;
+  padding: 4rem 0;
 }
-.card {
-  max-width: 20rem;
-  width: 100%;
-  min-height: 25rem;
-  border: 1px solid black;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.57);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+
+.courses-title {
+  font-family: "Noto Serif", serif;
+  font-size: 2.5rem;
+  color: #f68537;
+  text-align: center;
+  margin: 2rem 0 2.5rem 0;
+  font-weight: 700;
 }
+
 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
   padding-bottom: 5rem;
 }
+
+.card {
+  background: #fff;
+  max-width: 20rem;
+  width: 100%;
+  min-height: 26rem;
+  border: 1px solid #e4e4e4;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(246, 133, 55, 0.18);
+}
+
 .card img {
-  border-radius: 16px 16px 0px 0px;
-  object-fit: fill;
-  margin-bottom: 1.85rem;
-  -webkit-border-radius: 16px 16px 0px 0px;
-  -moz-border-radius: 16px 16px 0px 0px;
-  -ms-border-radius: 16px 16px 0px 0px;
-  -o-border-radius: 16px 16px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 1.5rem;
 }
-.card p,
-.card button {
+
+.card-content {
+  padding: 0 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
   font-family: "Roboto", sans-serif;
-  margin-bottom: 2.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
 }
+
 .card button {
   border: none;
-  padding: 8px 15px;
+  padding: 8px 18px;
   border-radius: 8px;
-  color: white;
+  color: #fff;
   background-color: #f68537;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  margin: 0px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-end;
 }
-.courses-title {
-  margin-top: 50px;
-  margin-bottom: 2.7rem;
+
+.card button:hover {
+  background-color: #e06d1c;
 }
+
 .see-more {
   font-family: "Roboto", sans-serif;
+  text-align: center;
   color: #f68537;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Product */
@@ -129,18 +212,21 @@
   padding-bottom: 5rem;
 }
 .card-Product {
+  background: #fff;
   max-width: 20rem;
   width: 100%;
-  min-height: 27rem;
-  border: 1px solid black;
+  min-height: 28rem;
+  border: 1px solid #e4e4e4;
   border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.57);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.card-Product:hover {
+  box-shadow: 0 4px 16px rgba(55, 246, 202, 0.845);
 }
 .card-Product img {
   border-radius: 16px 16px 0px 0px;
@@ -158,15 +244,18 @@
 }
 .card-Product button {
   border: none;
-  padding: 8px 15px;
+  padding: 8px 18px;
   border-radius: 8px;
-  color: white;
+  color: #fff;
   background-color: #f68537;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  margin: 0px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-end;
+}
+.card-Product button:hover {
+  background-color: #e06d1c;
 }
 .product-title {
   margin-top: 50px;
@@ -174,9 +263,21 @@
 }
 .see-more {
   font-family: "Roboto", sans-serif;
+  text-align: center;
   color: #f68537;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
+/* News */
+.news {
+  color: rgba(130, 110, 96, 0.7);
+}
+.news-card p {
+  padding: 20px;
+}
 /* Get in touch */
 .get-in-touch-section {
   display: flex;
@@ -184,7 +285,7 @@
   align-items: center;
   align-content: center;
   margin: 116px 150px;
-  gap: 115px;
+  gap: 20px;
 }
 .form-get-in-touch {
   display: flex;
@@ -193,17 +294,18 @@
 }
 input::placeholder {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 13px;
 }
 textarea {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 13px;
 }
 input[type="text"],
 input[type="email"],
 .form-get-in-touch textarea {
-  width: 497px;
-  min-height: 70px;
+  max-width: 600px;
+  width: 100%;
+  min-height: 50px;
   border-radius: 10px;
   background-color: white;
   display: block;
@@ -217,15 +319,14 @@ label[for="message"] {
   margin-bottom: 10px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 .form-get-in-touch textarea {
-  min-height: 135px;
+  min-height: 60px;
   /* text-align: center; */
 }
 .get-in-touch-title {
-  font-size: 97px;
-  font-weight: bold;
+  font-weight: 900;
 }
 .get-in-touch-btn {
   text-align: center;
